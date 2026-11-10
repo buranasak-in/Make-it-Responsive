@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse by Job Categories</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="min-h-screen bg-slate-50 flex justify-center items-center font-sans antialiased">
+
+    <!-- Main Container -->
+    <section class="w-full max-w-[1436px] min-h-[736px] mx-auto p-8 flex flex-col justify-center items-center">
+        
+        <!-- Header Section -->
+        <div class="w-[312px] h-[100px] mb-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#18233b] tracking-tight">
+                Browse by <br class="sm:hidden" />
+                <span class="relative inline-block text-[#18233b]">
+                    Job
+                    <!-- เส้นใต้ขีดไฮไลต์สีส้มใต้คำว่า Job -->
+                    <span class="absolute left-0 bottom-1 w-full h-2 bg-[#FF8345] -z-10"></span>
+                </span> 
+                Categories
+            </h2>
+        </div>
+
+        <!-- Grid Cards Layout (Responsive: 1 คอลัมน์บนมือถือ -> 2 คอลัมน์บนแท็บเล็ต -> 4 คอลัมน์บนจอคอม) -->
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1: Digital Marketing -->
+            <a href="#" class="group w-[333px] h-[268px] p-8 flex flex-col justify-between bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <!-- Icon Circle -->
+                <div class="w-[80px] h-[80px] flex justify-center items-center bg-orange-50 text-[#FF8345] rounded-full">
+                    <i class="fa-solid fa-bullhorn text-lg"></i>
+                </div>
+                <!-- Card Footer -->
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-base font-bold text-[#18233b] group-hover:text-[#FF8345] transition-colors">Digital Marketing</h3>
+                        <p class="text-xs text-slate-400 font-medium mt-1">143 Jobs Opened</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xs text-slate-700 group-hover:text-[#FF8345] group-hover:translate-x-1 transition-all"></i>
+                </div>
+            </a>
+
+            <!-- Card 2: Art & Design -->
+            <a href="#" class="group w-[333px] h-[268px] p-8 flex flex-col justify-between bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-[80px] h-[80px] flex justify-center items-center bg-orange-50 text-[#FF8345] rounded-full">
+                    <i class="fa-solid fa-pen-nib text-lg"></i>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-base font-bold text-[#18233b] group-hover:text-[#FF8345] transition-colors">Art & Design</h3>
+                        <p class="text-xs text-slate-400 font-medium mt-1">110 Jobs Opened</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xs text-slate-700 group-hover:text-[#FF8345] group-hover:translate-x-1 transition-all"></i>
+                </div>
+            </a>
+
+            <!-- Card 3: Accounting (Highlighted Circle) -->
+            <a href="#" class="group w-[333px] h-[268px] p-8 flex flex-col justify-between bg-slate-50/50 border border-slate-100 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-[80px] h-[80px] flex justify-center items-center bg-[#FF8345] text-white rounded-full shadow-md shadow-orange-200">
+                    <i class="fa-solid fa-dollar-sign text-lg"></i>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-base font-bold text-[#18233b] group-hover:text-[#FF8345] transition-colors">Accounting</h3>
+                        <p class="text-xs text-slate-400 font-medium mt-1">158 Jobs Opened</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xs text-slate-700 group-hover:text-[#FF8345] group-hover:translate-x-1 transition-all"></i>
+                </div>
+            </a>
+
+            <!-- Card 4: Photography -->
+            <a href="#" class="group w-[333px] h-[268px] p-8 flex flex-col justify-between bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-[80px] h-[80px] flex justify-center items-center bg-orange-50 text-[#FF8345] rounded-full">
+                    <i class="fa-solid fa-camera text-lg"></i>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-base font-bold text-[#18233b] group-hover:text-[#FF8345] transition-colors">Photography</h3>
+                        <p class="text-xs text-slate-400 font-medium mt-1">95 Jobs Opened</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xs text-slate-700 group-hover:text-[#FF8345] group-hover:translate-x-1 transition-all"></i>
+                </div>
+            </a>
+
+            <!-- Card 5: Copy Writing -->
+            <a href="#" class="group w-[333px] h-[268px] p-8 flex flex-col justify-between bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-[80px] h-[80px] flex justify-center items-center bg-orange-50 text-[#FF8345] rounded-full">
+                    <i class="fa-regular fa-[#FF8345] fa-pen-to-square text-lg"></i>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-base font-bold text-[#18233b] group-hover:text-[#FF8345] transition-colors">Copy Writing</h3>
+                        <p class="text-xs text-slate-400 font-medium mt-1">113 Jobs Opened</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xs text-slate-700 group-hover:text-[#FF8345] group-hover:translate-x-1 transition-all"></i>
+                </div>
+            </a>
+
+            <!-- Card 6: Music -->
+            <a href="#" class="group w-[333px] h-[268px] p-8 flex flex-col justify-between bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-[80px] h-[80px] flex justify-center items-center bg-orange-50 text-[#FF8345] rounded-full">
+                    <i class="fa-solid fa-headphones text-lg"></i>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-base font-bold text-[#18233b] group-hover:text-[#FF8345] transition-colors">Music</h3>
+                        <p class="text-xs text-slate-400 font-medium mt-1">55 Jobs Opened</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xs text-slate-700 group-hover:text-[#FF8345] group-hover:translate-x-1 transition-all"></i>
+                </div>
+            </a>
+
+            <!-- Card 7: Human Resources -->
+            <a href="#" class="group w-[333px] h-[268px] p-8 flex flex-col justify-between bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-[80px] h-[80px] flex justify-center items-center bg-orange-50 text-[#FF8345] rounded-full">
+                    <i class="fa-solid fa-user-group text-lg"></i>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-base font-bold text-[#18233b] group-hover:text-[#FF8345] transition-colors">Human Resources</h3>
+                        <p class="text-xs text-slate-400 font-medium mt-1">25 Jobs Opened</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xs text-slate-700 group-hover:text-[#FF8345] group-hover:translate-x-1 transition-all"></i>
+                </div>
+            </a>
+
+            <!-- Card 8: Explore 30 More Categories (Orange Banner Card) -->
+            <a href="#" class="group w-[333px] h-[268px] relative overflow-hidden p-6 flex flex-col justify-between bg-[#FF8345] text-white rounded-2xl shadow-md shadow-orange-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <!-- Background Waves Effect -->
+                <div class="absolute -right-8 -bottom-10 w-44 h-44 border-[16px] border-white/10 rounded-full pointer-events-none"></div>
+                <div class="absolute -right-4 -bottom-4 w-32 h-32 border-[12px] border-white/10 rounded-full pointer-events-none"></div>
+
+                <!-- Text Content & Arrow -->
+                <div class="my-auto flex items-center justify-between pr-2 z-10">
+                    <h3 class="text-xl font-bold leading-snug max-w-[140px]">
+                        Explore <br />
+                        30 More <br />
+                        Categories
+                    </h3>
+                    <i class="fa-solid fa-arrow-right text-sm text-white group-hover:translate-x-1.5 transition-transform"></i>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
